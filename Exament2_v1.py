@@ -31,10 +31,10 @@ def min_max_multiplos3(lista, ini, fin):
 def main():
     while True:
         n = int(input("Tamaño del arreglo: "))
-        if 2 <= n <= 4:
+        if  n>0:
             break
         else:
-            print("Error: solo se permite 2, 3 o 4")
+            print("El tamaño debe ser mayor a 0")
     lista = generar_lista(n)
     print("Lista:", lista)
     minimo, maximo = min_max_multiplos3(lista, 0, len(lista) - 1)
